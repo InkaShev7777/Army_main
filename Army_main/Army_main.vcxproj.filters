@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Weapon">
+      <UniqueIdentifier>{39228b91-1856-410f-b73b-ee89e285bd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Warrior">
+      <UniqueIdentifier>{ecd0c14b-9ef8-4933-9b76-c442e72c6da1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Army_main.cpp">
@@ -36,25 +42,63 @@
     <ClCompile Include="Bow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Horse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Warrior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Swordsman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Archer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Weapon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sword.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Spear.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Arrow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Kolchan.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Weapon</Filter>
     </ClInclude>
     <ClInclude Include="Bow.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Weapon</Filter>
     </ClInclude>
+    <ClInclude Include="Horse.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Kolchan.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Spear.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
+      <Filter>Header Files\Warrior</Filter>
+    </ClInclude>
+    <ClInclude Include="Swordsman.h">
+      <Filter>Header Files\Warrior</Filter>
+    </ClInclude>
+    <ClInclude Include="Archer.h">
+      <Filter>Header Files\Warrior</Filter>
+    </ClInclude>
+    <ClInclude Include="Rider.h">
+      <Filter>Header Files\Warrior</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Army_main.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

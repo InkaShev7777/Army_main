@@ -139,21 +139,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Archer.cpp" />
     <ClCompile Include="Army_main.cpp" />
     <ClCompile Include="Arrow.cpp" />
     <ClCompile Include="Bow.cpp" />
+    <ClCompile Include="Horse.cpp" />
     <ClCompile Include="Kolchan.cpp" />
+    <ClCompile Include="Rider.cpp" />
     <ClCompile Include="Spear.cpp" />
     <ClCompile Include="Sword.cpp" />
+    <ClCompile Include="Swordsman.cpp" />
+    <ClCompile Include="Warrior.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Archer.h" />
     <ClInclude Include="Arrow.h" />
     <ClInclude Include="Bow.h" />
+    <ClInclude Include="Horse.h" />
     <ClInclude Include="Kolchan.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Rider.h" />
     <ClInclude Include="Spear.h" />
     <ClInclude Include="Sword.h" />
+    <ClInclude Include="Swordsman.h" />
+    <ClInclude Include="Warrior.h" />
     <ClInclude Include="Weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Army_main.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
