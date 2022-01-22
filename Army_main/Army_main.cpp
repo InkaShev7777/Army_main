@@ -7,6 +7,7 @@ using namespace std;
 #include"Kolchan.h"
 #include"Bow.h"
 #include"Archer.h"
+#include"Detachment.h"
 int main()
 {
 	Weapon w;
@@ -15,6 +16,14 @@ int main()
 	Arrow a;
 	Kolchan k;
 	Bow b;
-	Archer ar;
-	cout << ar.getHealth();
+	Archer* ar = new Archer();
+	//cout << ar->getHealth();
+	Detachment* dd = new Detachment();
+	dd->Add();
+	dd->Add();
+	dd->Add();
+	dd->Add();
+	dd->print();
+
+
 }

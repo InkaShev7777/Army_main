@@ -143,6 +143,8 @@
     <ClCompile Include="Army_main.cpp" />
     <ClCompile Include="Arrow.cpp" />
     <ClCompile Include="Bow.cpp" />
+    <ClCompile Include="Detachment.cpp" />
+    <ClCompile Include="Fight.cpp" />
     <ClCompile Include="Horse.cpp" />
     <ClCompile Include="Kolchan.cpp" />
     <ClCompile Include="Rider.cpp" />
@@ -156,6 +158,8 @@
     <ClInclude Include="Archer.h" />
     <ClInclude Include="Arrow.h" />
     <ClInclude Include="Bow.h" />
+    <ClInclude Include="Detachment.h" />
+    <ClInclude Include="Fight.h" />
     <ClInclude Include="Horse.h" />
     <ClInclude Include="Kolchan.h" />
     <ClInclude Include="resource.h" />
