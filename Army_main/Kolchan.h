@@ -54,7 +54,6 @@ public:
 		delete tmp;
 		return forDel->arrow;
 	}
-
 	virtual void init() {
 		for (int i = 0; i < this->capacity; i++)
 		{

@@ -7,6 +7,7 @@ class Archer : public Warrior
 public:
 	Archer()
 	{
+		this->name = "Archer";
 		this->health = 150;
 		this->bow = new Bow();
 	}
@@ -14,7 +15,7 @@ public:
 	{
 		return this->health;
 	}
-	int Atak()
+	virtual int Atak()
 	{
 		return bow->Atak();
 	}

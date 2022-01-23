@@ -9,6 +9,7 @@ class Rider : public Warrior
 public:
 	Rider()
 	{
+		this->name = "Rider";
 		this->health = 100;
 		this->hors = new Horse();
 		this->spear = new Spear();
@@ -17,7 +18,7 @@ public:
 	{
 		return this->health;
 	}
-	int Atak()
+	virtual int Atak()
 	{
 		return spear->Atak();
 	}

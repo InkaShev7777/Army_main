@@ -10,6 +10,5 @@ public:
 		this->Uron = 25;
 		this->length = 0.65;
 	}
-
 };
 

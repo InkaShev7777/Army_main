@@ -10,23 +10,23 @@ struct Node_1
 		this->next = nullptr;
 		this->warrior = new Warrior();
 	}
-	Node_1(Node_1* node)
+	Node_1(Warrior* war,Node_1* next)
 	{
+		this->warrior = war;
+		this->next = NULL;
 		
-		node->next = nullptr;
-		warrior = node->warrior;
 	}
 };
 class Detachment
 {
 	Node_1* head;
 public:
-	void Add()
+	void Add(Warrior* war)
 	{
 		Node_1* tmp = this->head;
 		if (tmp == nullptr)
 		{
-			tmp = new Node_1();
+			tmp = new Node_1(war,nullptr);
 			this->head = tmp;
 		}
 		else
@@ -35,20 +35,20 @@ public:
 			{
 				tmp = tmp->next;
 			}
-			tmp->next = new Node_1();
+			tmp->next = new Node_1(war,nullptr);
 			tmp->next->next = nullptr;
 		}
 	}
-	void Atak()
+	int Atak()
 	{
-
+		return 1;
 	}
 	void print()
 	{
 		Node_1* tmp = this->head;
 		while (tmp!= nullptr)
 		{
-			std::cout << tmp << "\t" << (*tmp).warrior << "\t" << tmp->next<<"\n";
+			std::cout << "Soldier: " << tmp->warrior->getName() << "\tHealth: " << tmp->warrior->getHealth() << "\n";
 			tmp = tmp->next;
 		}
 	}

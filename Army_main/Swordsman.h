@@ -7,6 +7,7 @@ class Swordsman : public Warrior
 public:
 	Swordsman()
 	{
+		this->name = "Swordsman";
 		this->health = 200;
 		this->sword = new Sword();
 	}
@@ -14,10 +15,9 @@ public:
 	{
 		return this->health;
 	}
-	int Atak()
+	virtual int Atak()
 	{
 		return sword->Atak();
 	}
-
 };
 

@@ -8,8 +8,9 @@ public:
 	{
 		det = new Detachment();
 	}
-	void Atak()
+	void Atak(Detachment& d1, Detachment& d2)
 	{
+		
 
 	}
 };
