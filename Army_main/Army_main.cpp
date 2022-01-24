@@ -10,6 +10,7 @@ using namespace std;
 #include"Detachment.h"
 #include"Swordsman.h"
 #include"Rider.h"
+#include"Fight.h"
 int main()
 {
 	Detachment* otryad1 = new Detachment();
@@ -17,6 +18,7 @@ int main()
 	Swordsman* swordsman = new Swordsman();
 	Rider* rider = new Rider();
 	Archer* archer = new Archer();
+	Fight* fight = new Fight(otryad1,otryad2);
 	setlocale(0, "");
 	int vibor;
 	int v;
@@ -26,6 +28,7 @@ int main()
 		cout << "\t\tМеню\n";
 		cout << "1 - Добавить бойца\n";
 		cout << "2 - Вывод информации о бойцах\n";
+		cout << "3 - Бой\n";
 		cout << "0 - Выход\n";
 		cout << "Ваш выбор: ";
 		cin >> vibor;
@@ -105,7 +108,12 @@ int main()
 			system("pause");
 			system("cls");
 			break;
+		case 3:
+			system("cls");
+			fight->Atak();
+			system("pause");
+			system("cls");
+			break;
 		}
-
 	} while (vibor != 0);
 }

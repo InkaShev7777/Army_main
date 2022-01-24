@@ -14,7 +14,6 @@ struct Node_1
 	{
 		this->warrior = war;
 		this->next = NULL;
-		
 	}
 };
 class Detachment
@@ -39,9 +38,17 @@ public:
 			tmp->next->next = nullptr;
 		}
 	}
-	int Atak()
+	virtual void Atak()
 	{
-		return 1;
+		
+		//Node_1* tmp = this->head;
+		//while (tmp!=nullptr)
+		//{
+		//	
+		//	//std::cout << "Name: " << tmp->warrior->getName() << "\tHealth: " << tmp->warrior->getHealth() << "\n";
+		//	tmp = tmp->next;
+		//}
+		
 	}
 	void print()
 	{
